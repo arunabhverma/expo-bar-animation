@@ -11,7 +11,7 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack />
+      <Stack screenOptions={{ title: "Bars", headerLargeTitle: true }} />
     </ThemeProvider>
   );
 }
